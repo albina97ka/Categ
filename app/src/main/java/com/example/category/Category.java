@@ -4,6 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Category implements Parcelable {
+    private int id;
     private String name;
     private int taskCount;
 
@@ -47,4 +48,7 @@ public class Category implements Parcelable {
             return new Category[size];
         }
     };
+    public int getId() {
+        return id;
+    }
 }
